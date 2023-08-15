@@ -6,8 +6,10 @@ Teacher as a Lenient Expert: Teacher-Agnostic Data-Free Knowledge Distillation
 Data-free knowledge distillation (DFKD) aims to distill pretrained knowledge to a student model with the help of a generator without using original data. In such data-free scenarios, achieving stable performance of DFKD is essential due to the unavailability of validation data. Unfortunately, this paper has discovered that existing DFKD methods are quite sensitive to different teacher models, occasionally showing catastrophic failures of distillation, even when using well-trained teacher models. Our observation is that the generator in DFKD is not always guaranteed to produce precise yet diverse samples using the existing representative strategy of minimizing both class-prior and adversarial losses. Through our empirical study, we focus on the fact that class-prior not only decreases the diversity of generated samples, but also cannot completely address the problem of generating unexpectedly low-quality samples depending on teacher models. In this paper, we propose the teacher-agnostic data-free knowledge distillation (TA-DFKD) method, with the goal of more robust and stable performance regardless of teacher models. Our basic idea is to assign the teacher model a lenient expert role for evaluating samples, rather than a strict supervisor that enforces its class-prior on the generator. Specifically, we design a sample selection approach that takes only clean samples verified by the teacher model without imposing restrictions on the power of generating diverse samples. Through extensive experiments, we show that our method successfully achieves both robustness and training stability across various teacher models, while outperforming the existing DFKD methods.
 
 ## Ready 
-Create a "Pretrained_Teachers" folder for this project and download the pretrained teacher model from the provided link.</br>
+1. Create a "Pretrained_Teachers" folder in this project</br>
+2. Download the pretrained teacher models from the provided link.</br>
 ( Download link : https://drive.google.com/drive/folders/1nk_6dNXJdsGTlTR76YuCT2WLpCK9II8W?usp=sharing )
+3. Save teacher models in ./Pretrained_Teachers/CIFAR10/ or ./Pretrained_Teachers/CIFAR100/ or ./Pretrained_Teachers/TinyImageNet/
 
 
 ## run CIFAR-10 , CIFAR-100 and TinyImageNet 
