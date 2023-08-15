@@ -12,6 +12,9 @@ After, create subdirectories named CIFAR10, CIFAR100, and TinyImageNet within it
 
 ## run CIFAR-10 , CIFAR-100 and TinyImageNet 
 
+```
+python TA-DFKD-main-CIFAR.py --dataset CIFAR100 --teacher_model /CIFAR100_7501.pt --n_epochs 500 --batch_size 1024
+```
 
 
 
