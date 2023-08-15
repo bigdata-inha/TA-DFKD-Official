@@ -22,7 +22,7 @@ python TA-DFKD-main-CIFAR.py --dataset CIFAR100 --teacher_model /CIFAR10_7501.pt
 ```
 
 ### TinyImageNet
-Before, running TinyImageNet, you need to download the publicly available TinyImageNet dataset in ./data.
+Before, running TinyImageNet, you need to download the publicly available TinyImageNet dataset, and save it in ./data.
 ```
 python TA-DFKD-main-TinyImageNet.py --dataset TinyImageNet --teacher_model /TINY_7550.pt --n_epochs 500 --batch_size 1024
 ```
